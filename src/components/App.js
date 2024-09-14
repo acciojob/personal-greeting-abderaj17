@@ -12,7 +12,7 @@ const App = () => {
           setText(e.target.value)
         }}/>
 
-        <p>{Text && `Hello {Text}!`}</p>
+        <p>{Text && `Hello ${Text}!`}</p>
     </div>
   )
 }
