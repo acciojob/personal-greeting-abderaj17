@@ -1,10 +1,8 @@
-
-import { set } from "cypress/types/lodash";
 import React,{useState} from "react";
 
 const App = () => {
-  const[Text, setText]=useState(0);
-  console.log(Text);
+  const[text, setText]=useState();
+  console.log(text);
   return (
     <div>
         <label htmlFor="ip">Enter your name:</label> <br/>
@@ -12,7 +10,7 @@ const App = () => {
           setText(e.target.value)
         }}/>
 
-        <p>{Text && `Hello ${Text}!`}</p>
+        <p>{text && `Hello ${text}!`}</p>
     </div>
   )
 }
